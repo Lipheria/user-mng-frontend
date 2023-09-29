@@ -10,7 +10,7 @@ const CreateUser = () => {
 
   const Submit = (e) => {
     e.preventDefault()
-    axios.post("http://localhost:3001/createUser", {name, email,age})
+    axios.post("https://user-mng-backend.vercel.app/createUser", {name, email,age})
     .then(result =>{
       console.log(result)
       navigate('/')
